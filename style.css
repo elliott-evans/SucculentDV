@@ -1,0 +1,44 @@
+html {
+    background-image: url(background.jpg); /*adds background image*/
+    background-size: 100% 100% cover;
+    height: 100%
+}
+
+body {
+    margin: 1.5%; /*Clears margin in body, allowing setting to be applied locally*/
+    height: 95%;
+    border-radius: 25px;
+    background-color: rgba(255,255,255,0.75); /*white with 1/4 transparency, overlaid by header*/
+}
+
+.Header {
+    background-color: #ACD7D7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 25px;
+    height: 50px;
+}
+
+.Header_Logo {
+    float: left;
+}
+
+.Header_Button_Box {
+    float: right;
+}
+
+.Header_Button {
+    font-family: monospace;
+    letter-spacing: -4px;
+    color: #7C4F5A;
+    background-color: #ACDCA6;
+    padding: 1px 10px 1px 10px;
+    border-radius: 15px;
+    border: solid #7D967C;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.Header_Button_Text:link {
+    color: #7C4F5A;
+}
