@@ -5,8 +5,9 @@ html {
 }
 
 body {
-    margin: 1.5%; /*Clears margin in body, allowing setting to be applied locally*/
-    height: 95%;
+    margin: 1.5%; /*Sets margin in body, allowing greater setting to be applied locally*/
+    height: 96.5%;
+    overflow: hidden;
     border-radius: 25px;
     background-color: rgba(255,255,255,0.75); /*white with 1/4 transparency, overlaid by header*/
 }
@@ -35,10 +36,51 @@ body {
     padding: 1px 10px 1px 10px;
     border-radius: 15px;
     border: solid #7D967C;
-    font-size: 40px;
+    font-size: 350%;
     margin-left: 10px;
 }
 
 .Header_Button_Text:link {
     color: #7C4F5A;
+    text-decoration-line: none;
+    font-weight: 200;
+}
+
+.Body_Section {
+    margin: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: inherit;
+}
+
+.table {
+    overflow-y: scroll;
+    max-height: 205px;
+    height: 65%;
+    display: block;
+}
+
+#items {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#items td, #items th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+#items th {
+    background-color: rgba(172,215,215,0.95);
+    position: sticky;
+    top: 0;
+}
+
+#items tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.8);
+}
+
+#items tr:hover {
+    background-color: rgba(172,215,215,0.5);
 }
