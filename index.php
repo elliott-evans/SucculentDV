@@ -23,9 +23,9 @@
             
             <div class="Header_Button_Box" id="Header_Buttons">
                 
-                <a href="www.google.com">
+                <a href="/items/Example%20Item/template.php">
                     <div class="Header_Button" id="Header_Button_1" style="float:left">
-                        <a href="www.google.com" class="Header_Button_Text">
+                        <a href="/items/Example%20Item/template.php" class="Header_Button_Text">
                             ADD ITEM
                         </a>
                     </div>
