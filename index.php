@@ -18,19 +18,19 @@
         <div class="Header" id="Index_Header">
             
             <div class="Header_Logo" id="Header_Logo">
-                <img src="logo_placeholder.jpg">
+                <img src="logo.png">
             </div>
             
             <div class="Header_Button_Box" id="Header_Buttons">
                 
-                <a href="/items/Example%20Item/template.php">
+                <a href="javascript:window.open('add_item.php', '', 'width=900,height=2000')">
                     <div class="Header_Button" id="Header_Button_1" style="float:left">
-                        <a href="/items/Example%20Item/template.php" class="Header_Button_Text">
+                        <a href="javascript:window.open('add_item.php', '', 'width=900,height=2000')" class="Header_Button_Text">
                             ADD ITEM
                         </a>
                     </div>
                 </a>
-                
+                    
                 <a href="javascript:window.open('wishlist.php', '', 'width=900,height=2000')">
                     <div class="Header_Button" id="Header_Button_2", style="float:right">
                         <a href="javascript:window.open('wishlist.php', '', 'width=900,height=2000')" class="Header_Button_Text">
@@ -44,7 +44,20 @@
         </div> <!-- Closes <div class="Header" id="Header_Logo"> -->
 
         <div>
-            
+            <table id="index_display">
+                <tr><th></th><th></th></tr>
+                
+                <?php 
+                    $i = 0;
+                    foreach(str_replace(' ', '%20', array_diff(scandir('items/'), array('..', '.'))) as $item) {
+                        if(!fmod($i,2)) echo '<tr>';
+                        echo '<td style="background: url(items/'.$item.'/cover.jpeg)"><a href="items/' . $item . '/template.php"><div><h1>' . str_replace('%20',' ', $item) . '</h1><h2><em>' . file_get_contents("items/" . str_replace('%20',' ', $item) . "/subtitle.txt") . '</em></h2></div></a></td>
+                        ';
+                        if (fmod($i,2)) echo '</tr>';
+                        $i++;
+                    }
+                ?>
+            </table>
         </div>
 
         <div>

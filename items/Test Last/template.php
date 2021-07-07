@@ -21,7 +21,7 @@
         <div class="Header" id="Index_Header" style="height:100px;">
             
             <div class="Header_Logo" id="Header_Logo">
-                <img src="../../logo_placeholder.jpg">
+                <img src="../../logo.png">
             </div>
             
             <div class="Header_Button_Box" id="Header_Buttons">
@@ -58,7 +58,7 @@
             </div>
 
             <div>
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
                         <?php 
@@ -85,7 +85,7 @@
                                     $isactive = ' active';
                                 }
                                 echo '<div class="item' . $isactive . '">
-                                <img src="Carousel/' . $item . '" alt="img" style="width:100%;height:450px;object-fit:cover;">
+                                <img src="Carousel/' . $item . '" alt="img" style="width=100%;">
                                 </div>
                                 ';
                                 $numcount += 1;

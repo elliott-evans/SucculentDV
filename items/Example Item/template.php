@@ -21,7 +21,7 @@
         <div class="Header" id="Index_Header" style="height:100px;">
             
             <div class="Header_Logo" id="Header_Logo">
-                <img src="../../logo_placeholder.jpg">
+                <img src="../../logo.png">
             </div>
             
             <div class="Header_Button_Box" id="Header_Buttons">
