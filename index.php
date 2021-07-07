@@ -51,7 +51,7 @@
                     $i = 0;
                     foreach(str_replace(' ', '%20', array_diff(scandir('items/'), array('..', '.'))) as $item) {
                         if(!fmod($i,2)) echo '<tr>';
-                        echo '<td style="background: url(items/'.$item.'/cover.jpeg)"><a href="items/' . $item . '/template.php"><div><h1>' . str_replace('%20',' ', $item) . '</h1><h2><em>' . file_get_contents("items/" . str_replace('%20',' ', $item) . "/subtitle.txt") . '</em></h2></div></a></td>
+                        echo '<td style="background-image: url(items/'.$item.'/cover.jpeg), url(loading.gif)"><a href="items/' . $item . '/template.php"><div><h1>' . str_replace('%20',' ', $item) . '</h1><h2><em>' . file_get_contents("items/" . str_replace('%20',' ', $item) . "/subtitle.txt") . '</em></h2></div></a></td>
                         ';
                         if (fmod($i,2)) echo '</tr>';
                         $i++;

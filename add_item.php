@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+error_reporting(-1);
+?>
 <?php function getExtension ($mime_type){
     $extensions = array('image/jpeg' => '.jpeg',
                         'image/png' => '.png',
